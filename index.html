@@ -12,9 +12,9 @@
     <div class="all-tasks">
       <h2 class="task-list-title">My lists</h2>
       <ul class="task-list">
-        <li class="active-list">You tube</li>
-        <li>Work</li>
-        <li>Grocery</li>
+        <li class="list-name active-list">You tube</li>
+        <li class="list-name">Work</li>
+        <li class="list-name">Grocery</li>
       </ul>
 
       <form action="#">
@@ -24,12 +24,12 @@
           placeholder="new list name"
           aria-label="new list item"
         />
-        <button class="btn list" aria-label="create new list">+</button>
+        <button class="btn create" aria-label="create new list">+</button>
       </form>
     </div>
 
     <div class="todo-list">
-      <div class="todo header">
+      <div class="todo-header">
         <h2 class="list-title">YouTube</h2>
         <p class="task-count">3 tasks remaining</p>
       </div>
@@ -66,11 +66,11 @@
           <form action="#">
             <input
               type="text"
-              class="new list"
+              class="new task"
               placeholder="new task name"
               aria-label="new task item"
             />
-            <button class="btn task" aria-label="create new task">+</button>
+            <button class="btn create" aria-label="create new task">+</button>
           </form>
         </div>
         <div class="delete-stuff">

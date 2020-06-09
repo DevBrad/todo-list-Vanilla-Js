@@ -32,7 +32,91 @@ body {
   /*7vw represent 7% of the screen pixel width*/
   font-weight: 900;
   color: rgba(0, 0, 0, 0.1);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  margin: -0.3em 0 0.5em;
+}
+
+.task-list {
+  list-style-type: circle;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  padding-left: 1.1em;
+}
+
+.list-name {
+  cursor: pointer;
+}
+
+.list-name:hover {
+  opacity: 0.7;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn {
+  cursor: pointer;
+  background: 0;
+  border: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.btn.create {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-right: 0.25em;
+  -webkit-transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-in;
+}
+
+.btn.create:hover {
+  opacity: 0.7;
+}
+
+.new {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  border-bottom: 1px solid currentColor;
+  font-size: inherit;
+  outline: none;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -webkit-transition: border-bottom 150ms ease-in;
+  transition: border-bottom 150ms ease-in;
+}
+
+.new:focus {
+  border-bottom-width: 3px;
+}
+
+.new:focus::-webkit-input-placeholder {
+  opacity: 0.2;
+}
+
+.new:focus:-ms-input-placeholder {
+  opacity: 0.2;
+}
+
+.new:focus::-ms-input-placeholder {
+  opacity: 0.2;
+}
+
+.new:focus::placeholder {
+  opacity: 0.2;
+}
+
+.new.list {
+  font-size: 1.1rem;
+}
+
+.active-list {
+  font-weight: 700;
 }
 
 .all-tasks {
@@ -40,6 +124,37 @@ body {
 }
 
 .todo-list {
+  --spacer: 2rem;
   grid-area: active;
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin-right: 2rem;
+}
+
+.todo-header {
+  padding: var(--spacer);
+  background: #e4e4e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list-title {
+  margin: 0 1em 0 0;
+}
+
+.task-count {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.todo-body {
+  padding: var(--spacer);
 }
 /*# sourceMappingURL=main.css.map */
